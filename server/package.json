@@ -8,5 +8,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@types/amqplib": "^0.10.8",
+    "amqplib": "^0.10.9"
+  }
 }
