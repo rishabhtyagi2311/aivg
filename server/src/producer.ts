@@ -11,7 +11,7 @@ export async function sendMessage()
         const channel = await connection.createChannel();
 
         const queue = "test_queue"
-        await channel.assertQeue(queue , {durable: true});
+        await channel.assertQueue(queue , {durable: true});
 
 
         const message = 'hello from node js'

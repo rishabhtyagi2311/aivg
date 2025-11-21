@@ -3,7 +3,7 @@ import json
 
 def callback(ch, method, properties, body):
     """called when a message arrives"""
-    message = body.devode('utf-8')
+    message = body.decode('utf-8')
     print(f"recieved : {message}")
     ch.basic_ack(delivery_tag = method.delivery_tag)
 
